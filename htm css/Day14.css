@@ -1,0 +1,106 @@
+button {
+    color           : azure;
+    background-color: grey;
+    border-radius   : 10px;
+    border          : 2px solid grey;
+    width           : 200px;
+    height          : 50px;
+}
+
+button:hover {
+    background-color: white;
+    color           : black;
+}
+
+div {
+    background-color            : deeppink;
+    color                       : white;
+    width                       : 100px;
+    height                      : 100px;
+    text-align                  : center;
+    /*attaching the anime to a tag*/
+    animation-name              : anim1;
+    /*anime duration*/
+    animation-duration          : 3s;
+    /*anime count*/
+    animation-iteration-count   : 2;
+    /*anime infinte count*/
+    /* animation-iteration-count: infinite; */
+    /* short end property name of the animation */
+    /* animation                : name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes anim1 {
+
+    /*from{
+        background-color: lightblue;
+    }
+    to{
+        background-color:yellow;
+    }*/
+
+    /*% division of the duration and specifying the color*/
+    /* 0%{
+        background-color: chartreuse;
+    }
+    25%{
+        background-color: magenta;
+    }
+    50%{
+        background-color: yellow;
+    }
+    75%{
+        background-color: orange;
+    }
+    */
+
+    /*from{
+        margin-top: 0px;
+        margin-left: 0px;
+    } 
+    to{
+        /* margin-top: 0px; */
+    /* margin-left: 300px; */
+    /* modifes scale of the property */
+    /* transform: scaleX(5); */
+    /* transform: scaleY(2); */
+    /* transform: scale(5,10); */
+    /* skew*/
+    /* transform: skewX(90deg);
+        transform: skewY(60deg);
+        transform: skew(120deg,60deg); */
+    /* translate property will move the data*/
+    /* transform: translateX(200px);
+        transform: translateY(400px); */
+    /* transform: translate(400px,400px); *
+        transform: translate(400px,400px) skew(30deg) scale(15,0) rotate(360deg);
+    }*/
+
+    /*0%{
+        margin:0%;
+    }
+    25%{
+        margin-top: 0%;
+        margin-left: 400px;
+        /*border-radius: 50px;
+    }
+    50%{
+        margin-top: 400px;
+        margin-left: 400px;
+    }
+    75%{
+        margin-left: 0%;
+        margin-top: 400px;
+        margin-bottom: 400px;
+    } */
+    from {
+        transform    : scale(0) translate(0%, 0%);
+        animation    : 5s infinite;
+        border-radius: 20px;
+    }
+
+    to {
+        transform    : scale(1) translate(50%, 50%);
+        border-radius: 20px;
+    }
+}

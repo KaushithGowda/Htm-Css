@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day13</title>
+    <link rel="stylesheet" href="Day13.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <center>
+        <!-- autocomplete :: suggestions(on::default and off)  -->
+        <form autocomplete="off" action="#" method="POST">
+            <fieldset>
+                <legend>Sign-Up</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <!-- required :: mandatory field -->
+                            <label>Name <i class="fa fa-user" aria-hidden="true"
+                                    style="font-size: 30px; color: grey;"></i></label>
+                        <td><input type="text" placeholder="Name" autofocus name="User_name" required
+                                autocomplete="off">
+                        </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Phone <i class="fa fa-phone-square" aria-hidden="true"></i></label>
+                        <td>
+                            <!-- minlength :: minlength of characters -->
+                            <input type="number" placeholder="Phone Number" name="Phone" maxlength="10" required>
+                        </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Password<i class="fa fa-key" aria-hidden="true"></i></label>
+                        <td><input type="password" placeholder="Password" name="Password" minlength="8"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Email <i class="fa fa-envelope" aria-hidden="true"></i></label>
+                        <td><input type="email" placeholder="abc@gmail.com" name="Email"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>DOB <i class="fa fa-calendar" aria-hidden="true"></i></label>
+                        <td><input type="date" name="DOB"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Gender</label>
+                        </td>
+                        <td>
+                            Male <i class="fa fa-male" aria-hidden="true"></i>
+                            <input type="radio" name="Gender" value="Male" id="">
+                            Female <i class="fa fa-female" aria-hidden="true"></i>
+                            <input type="radio" name="Gender" value="Female" id="">
+                            Others <i class="fa fa-genderless" aria-hidden="true"></i>
+                            <input type="radio" name="Gender" value="Others" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Languages known</label>
+                        </td>
+                        <td>
+                            Kannada
+                            <input type="checkbox" name="Kan" id="">
+                            English
+                            <input type="checkbox" name="Eng" id="">
+                            Telgu
+                            <input type="checkbox" name="Tel" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Country
+                        </td>
+                        <td>
+                            <select name="Country" id="">
+                                <option value="India">India</option>
+                                <option value="USA" selected>USA</option>
+                                <option value="UK">UK</option>
+                                <option value="Germany">Germany</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            States
+                        </td>
+                        <td>
+                            <select name="States" id="">
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="TamilNadu ">TamilNadu</option>
+                                <option value="AndraPradesh">AndraPradesh</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Favorite Brands
+                        </td>
+                        <td>
+                            <input type="text" list="li">
+                            <datalist id="li">
+                                <option value="Nike">Nike</option>
+                                <option value="Adidas">Adidas</option>
+                                <option value="Puma">Puma</option>
+                                <option value="Ucb">Ucb</option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Address <i class="fa fa-address-card" aria-hidden="true"></i>
+                        </td>
+                        <td>
+                            <textarea name="address" id="" placeholder="Residencial Address"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Salary expection</td>
+                        <td>
+                            <input type="range" max="10000" name="Salary" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Resume</label>
+                        <td><input type="file" name="Resume" multiple></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Choose colour</label>
+                        </td>
+                        <td><input type="color" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Signature</label>
+                        </td>
+                        <td>
+                            <!-- canavas :: helps in signature -->
+                            <canvas>
+
+                            </canvas>
+                        </td>
+                    <tr>
+                        <td><input type="checkbox" name="" id="">
+                        <td>
+                            <p>I declare Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, asperiores?
+                            </p>
+                        </td>
+                        </td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="submit">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quod sequi eum maiores necessitatibus qui molestias dolorum? Aliquid vero laboriosam, repellendus voluptatibus consequuntur nihil dignissimos sapiente corporis voluptates fugiat voluptas sed doloremque quas maiores odio placeat tempora rem provident, qui sit ratione maxime excepturi. Quod ullam laborum molestias repellendus ipsam amet consectetur reiciendis? Quasi, ratione. Rem, sapiente? A obcaecati totam natus doloribus. Maxime a distinctio quis fugiat perspiciatis. Vero reprehenderit fugiat assumenda deleniti nostrum dicta perferendis! Iste soluta ea sequi fugiat aperiam eum delectus magnam. Ducimus hic sapiente earum repellendus ipsa quaerat pariatur facilis fugiat odio soluta voluptate minima eius, corrupti fugit porro accusamus praesentium corporis aut ullam. Dignissimos ea quis ipsum animi consequuntur porro suscipit illo quidem corrupti quaerat labore vitae, numquam quo nostrum esse eligendi rerum? Officia facilis et odit quasi quia, distinctio alias vel esse magni! Ipsa ratione dignissimos consectetur suscipit temporibus aspernatur nisi esse, dolorem recusandae incidunt. Praesentium libero dignissimos ea nihil, laboriosam quisquam, doloribus enim, ducimus quos nam dolores! Fugiat, facere explicabo temporibus harum aliquid at recusandae laborum repellat, libero facilis blanditiis nulla officia, quisquam totam fuga molestiae deserunt. Deserunt esse reiciendis a maiores quia! Aperiam itaque, distinctio voluptatem asperiores dolorem et repellendus temporibus laboriosam.</p> -->
+        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus dolorum officiis sunt temporibus magnam aliquam, voluptatibus consequatur culpa architecto molestiae, ullam odio harum provident dicta inventore enim! Molestiae distinctio reiciendis, soluta praesentium aliquam esse illum culpa sunt perferendis. Dolorem fugiat commodi blanditiis. Praesentium ipsam alias numquam. Voluptatibus doloribus vero iste cumque velit, pariatur animi officiis cupiditate quos? Praesentium ab eligendi consequuntur beatae asperiores soluta doloribus aliquam provident adipisci enim. Officia fugit reprehenderit quaerat obcaecati totam harum consequuntur! Accusantium eligendi qui ducimus saepe, iste excepturi voluptates eos impedit obcaecati? Odit numquam dolor obcaecati praesentium commodi eveniet maxime fugiat pariatur veniam voluptate incidunt non corrupti totam, minus, eligendi doloremque, molestias est dolorum? Doloribus officiis ut, nihil doloremque dignissimos a numquam adipisci deleniti, voluptatum in cumque ad rerum odit architecto, perferendis deserunt corporis. Nostrum sunt tenetur ullam harum obcaecati vitae fuga. Dolorem veniam reiciendis illum error temporibus est perferendis odio ab ea voluptates?</p> -->
+    </center>
+</body>
+
+</html>

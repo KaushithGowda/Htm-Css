@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5</title>
+    <style>
+        /* p{
+
+            background-color: palevioletred;
+            color: white;
+            font-style: normal;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            16px=1em 
+            font-size: 30px;
+        }
+
+        p,h1{
+            background-color: cornflowerblue;
+            color: white;
+            font-style: normal;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+        } */
+
+        /* when classname is used as selector we should specify .
+        1.classname should start with "."
+        2.classname should not start from  number */
+
+        .para1,
+        .para2 {
+            background-color: aqua;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .para3 {
+            background-color: dodgerblue;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .bmtc {
+            text-align: center;
+            color: darkviolet;
+            background-color: darkgray;
+            font-family: monospace;
+        }
+
+        .farmer {
+            color: green;
+            text-transform: uppercase;
+            text-align: center;
+            background-color: chartreuse;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .common {
+            font-size: 40px;
+
+        }
+
+        /* id attribute should start with "#"
+        1.id should be used for unique styling only 
+        2.id should not start from number
+        3.id cannot be used with multiple id's
+        */
+        #life {
+            background-color: red;
+            color: aliceblue;
+            text-transform: uppercase;
+            text-align: center;
+
+        }
+
+        #freedom {
+            background-color: grey;
+            color: aliceblue;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .para4 {
+            background-color: black;
+        }
+
+        #para5 {
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        .wordspacing{
+            background-color: grey;
+            color: aliceblue;
+            /* word-spacing: 20px;
+            letter-spacing: 5px;
+            line-height: 20px; */
+            /* divides paragraph into 3 paragraph */
+            column-count: 3;
+            /* aligns the content in a paragraph */
+            text-align: justify;
+            /* starts paragraph with a space */
+            text-indent: 100px;
+
+        }
+
+        .img1{
+            height: 500px;
+            width: 500px;
+            float: right;
+            /* o ---> 0% */
+            /* 1 ---> 100% */
+            /* filter: grayscale(1); */
+            filter: grayscale(1);
+        }
+
+        .img2{
+            height: 500px;
+            width: 500px;
+            float: right;
+            /* o ---> 0% */
+            /* 1 ---> 100% */
+            filter: grayscale(0);
+            /* filter: grayscale(1); */
+            /* filter: saturate(500%); */
+            width: 100%;
+            height: 100%;
+        }
+        
+        video{
+            width: 100%;
+            height: 50%;
+            
+        }
+    </style>
+</ead>
+
+<body>
+    <!-- center the image -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    
+    <!-- as html is interpreted lang it will execute line by line and hence last p will be executed -->
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    
+    <!-- class attribute -->
+    <p class="para1">You miss 100% of shots which you did't take. -Micheal Scott</p>
+    
+    <p class="para2">Success should be a journey not a destination</p>
+    
+    <p class="para3">Enjoy working</p>
+    
+    <!-- id has first priority than class -->
+    <p class="para4" id="para5">Lorem ipsum dolor sit amet.</p>
+    
+    <!-- classes can have many names and it ahs to be separated by space -->
+    <h1 class="bmtc common">BMTC strike</h1>
+
+    <h2 class="farmer common">Farmer's protest</h2>
+
+    <!-- id attribute -->
+    <p id="life">Life starts at 7000RPM</p>
+    
+    <p id="freedom">you feel freedom on open road </p>
+
+    <p class="wordspacing">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam nobis hic atque, expedita est quos quod? Iste laboriosam doloremque voluptates facere a ipsa error optio repellat? Provident nemo dicta accusamus eveniet id corrupti quas porro amet culpa. Qui ipsa modi est, reiciendis unde facilis excepturi nesciunt aliquam. Fuga iste sit praesentium! Minus odit at obcaecati nihil odio animi illo id dolore sit? Animi eius delectus nostrum accusamus iusto totam quo? Rem tenetur reprehenderit sit obcaecati beatae libero odit, nemo quia provident cupiditate dolorum placeat inventore et nesciunt eaque optio similique quos vitae suscipit doloremque. Excepturi praesentium, ipsa nemo hic voluptates explicabo? Dicta, quis tenetur culpa repudiandae laudantium quibusdam omnis nobis reprehenderit eius velit recusandae mollitia temporibus natus inventore labore amet? Repellat saepe atque sapiente, in corrupti debitis amet temporibus? Quidem sit numquam iusto quisquam? Non aperiam cupiditate necessitatibus labore ullam voluptates temporibus quibusdam aliquam quo fugit! Odio quo, sunt ad recusandae debitis eaque. Quasi neque excepturi rem, perspiciatis deserunt alias laudantium ducimus qui fugit laborum quibusdam exercitationem nulla aliquid autem voluptas eum ratione magni dolores facilis labore delectus ipsa veritatis! Aspernatur libero fugiat illum magni! Possimus numquam fugiat tenetur iste voluptatibus ipsum, sunt molestiae hic! Ab ut asperiores animi assumenda!</p>
+    
+    <!-- Mulitmedia -->
+    <img class="img1" src="../images/mustang.jfif" alt="Image of a old mustang">
+    <img class="img2" src="https://i.pinimg.com/originals/9e/3a/1c/9e3a1cfb7a471a1ad5904e93ebe8e260.jpg" alt="Image of new mustang">
+
+    <!-- <center>
+        <img src="mustang.jfif" alt="img1">
+        <br>
+        <br>
+        <img src="mustang.jfif" alt="img2">
+    </center> -->
+
+    <video src="Fastest.2011.mp4" controls loop ></video>
+    <audio src="C:\Users\Harshith\Music\Gasolina.mp3" controls></audio>
+</body>
+
+</html>

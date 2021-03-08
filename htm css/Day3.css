@@ -1,0 +1,14 @@
+div{
+    color: white;
+    background-color: rgb(0, 0,255);
+    /* background-color: #12450025; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    height: 200px;
+    text-align: left;
+    /* text-transform:  */
+    text-transform: lowercase;
+    text-transform: capitalize;
+    text-transform: none;
+    text-transform: uppercase;
+}

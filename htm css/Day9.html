@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Day9</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            font-size: 20px;
+            text-transform: capitalize;
+            /* border-style:: creates border for the element 
+            *  border-bottom-style: double/dotted/dashed/groove/solid*/
+
+            /* border-bottom-style: double;
+            border-right-style: dashed;
+            border-left-style: groove;
+            border-top-style: solid;  */
+
+            /* border-style:: does all property in a line tag 
+            border-style: top right bottom left;//clockwise from top to left */
+            /* border-style: solid double none none;
+            border-style: solid; */
+            border-style: solid dotted double dashed;
+            /*properties like border-top-style , border-right-style, border-bottom-style, border-left-style can be replaced by border-style*/
+
+            /*border-width:: decides the size of the border*/
+            /* border-top-width: 5px;
+            border-right-width: 6px;
+            border-bottom-width: 8px;
+            border-left-width: 5px;*/
+            /* border-width:: does all property in a line tag 
+            border-width: top right bottom left;//clockwise from top to left */
+            /* border-top-width: 5px;
+            border-right-width: 6px;
+            border-bottom-width: 8px;
+            border-left-width: 5px; */
+            border-width: 5px 6px 8px 5px;
+            /*width:: property specifies width of border in the page */
+            width: 300px;
+
+            /* border-top-color: blueviolet;
+            border-right-color: brown;
+            border-bottom-color: chartreuse;
+            border-left-color: darkmagenta; */
+            border-color: yellow red purple blue;
+
+            /*border:: does the border border-style,border-width,border-color*/
+            border: solid 2px red;
+            /* border-radius:: makes edges of the border curvy */
+            /* border-top-left-radius: 10px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 10px; */
+            border-radius: 10px 10px 15px 10px;
+
+            /*padding:: creates spaces btw content and border*/
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+            padding: 100px 40px 100px 10px;
+
+            /* margin:: positioning of a content */
+            /* margin-top: 200px;
+            margin-right: 200px;
+            margin-bottom: 200px;
+            margin-left: 200px; */
+            margin: 100px 100px 200px 100px;
+
+            /* css cox model
+                margin
+                    border
+                        padding
+                            content
+                                padding
+                                    border
+                                        margin   
+            */
+        }
+
+        iframe {
+            border: 5px solid black;
+            padding: 10px 10px 10px 10px;
+            margin: 100px 100px 100px 100px;
+            width: 300px;
+            height: 300px;
+
+        }
+        table,td{
+            border:solid black 2px;
+            border-radius: 5px;
+            font-size: 30px;
+            width: 80%;
+            /* table-layout:: this makes all rows with same width */
+            table-layout: fixed;
+            border-spacing: 20px;
+            height: 100px;
+            /* border-collapse: collapse; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>hello world</h1>
+    <iframe src="https://www.abc.com/" frameborder="1"></iframe>
+    <!-- google maps -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62213.1299949046!2d77.54878072078598!3d12.951323761010846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14f14c1ce0b9%3A0x6504adb3f2186e8d!2sSilk%20Board!5e0!3m2!1sen!2sin!4v1608180529760!5m2!1sen!2sin"
+        frameborder="1"></iframe>
+
+    <!-- twitter account from twitterpublish -->
+    <iframe
+        srcdoc="<a href=https://twitter.com/intent/tweet?button_hashtag=ronaldo&ref_src=twsrc%5Etfw class=twitter-hashtag-button data-show-count=false>Tweet #ronaldo</a><script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>"
+        frameborder="0">
+    </iframe>
+
+    <table>
+        <!-- table row -->
+        <tr>
+            <!-- table data -->
+            <td>Name</td>
+            <td>Age</td>
+            <td>Phone</td>
+        </tr>
+        <tr>
+            <td>bheem</td>
+            <td>12</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>raju</td>
+            <td>11</td>
+            <td>108</td>
+        </tr>
+        <tr>
+            <td>khaliya</td>
+            <td>12</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>chuttki</td>
+            <td>10</td>
+            <td>145</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

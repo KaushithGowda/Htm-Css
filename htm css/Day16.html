@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day16</title>
+    <link rel="stylesheet" href="Day16.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <!-- shortcut for below line
+        1. .container 
+        2. #container 
+    <div class="container"></div>
+    <div id="container"></div> -->
+    <!-- <div class="container">
+        <div class="row">row1</div>
+        <div class="row">row2</div>
+        <div class="row">row3</div>
+    </div> -->
+    <!-- container class :: margin left and right will be present -->
+    <!-- container-fluid :: margin will not be present(entire width will be occupied) -->
+    <!-- <div class="container"> -->
+    <!-- <div class="container-fluid"> :: width 100% -->
+    <!-- <div class="container-md">:: (container breakpoint) after the breakpoint screen size width will not be 100%(container-fluid) i.e continer-md will now act as container same goes with container-sm,container-lg,container-xl -->
+
+    <div class="container-md">
+        <div class="row">
+            <!-- col-12 :: occipies 12 columns
+                col-sm-6 :: occipies 6 columns
+                nothing :: extra small
+                sm :: small device
+                md :: medium
+                lg :: large
+                xl :: extra large-->
+            <div class="col-12 col-sm-4 col-md-1 col-lg-6 col-xl-4">
+                <div class="user">Data1</div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-1 col-lg-3 col-xl-4">
+                <div class="user">Data2</div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-10 col-lg-3 col-xl-4">
+                <div class="user">Data3</div>
+            </div>
+        </div>
+    </div>
+    <!-- table :: defines a table
+         table-border :: defines a border
+         table-hover :: hover property
+         table-striped :: alterate colouring of rows
+         table-dark :: dark colour theme -->
+    <table
+        class="table table-border table-hover table-striped table-dark table-success table-danger table-responsive-lg">
+        <tr class="bg-primary">
+            <th class="th">Name</th>
+            <th class="th">Branch</th>
+            <th class="th">Age</th>
+        </tr>
+        <tr>
+            <td>Akhilesh</td>
+            <td>EEE</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Ajay</td>
+            <td>CS</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Kiran</td>
+            <td>MEC</td>
+            <td>35</td>
+        </tr>
+    </table>
+    </table>
+    </table>
+</body>
+
+</html>

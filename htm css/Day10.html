@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day10</title>
+    <style>
+        table,
+        td,th {
+            border: 1px solid black;
+            border-spacing: 5px;
+            font-size: 30px;
+            table-layout: fixed;
+            width: 80%;
+            height: 50px;
+            table-layout: fixed;
+            vertical-align:middle;
+            border-collapse: collapse;
+            border-width: 2px;
+            /* text-align: right; */
+        }
+
+        .cartoon{
+            width: 300%;
+        }
+        
+        .NickName{
+            background-color:lightblue ;
+            width: auto;
+        }
+
+        #NickNameth{
+            background-color: deepskyblue;
+        }
+        /* puting on a scroll bar for table only(works only on x axis:: does not work in y axis) */
+        div {
+            overflow-x: scroll;
+        }
+
+        /* applying css property for rows using class names */
+        .tr1,
+        .tr3,
+        .tr5 {
+            background-color: darkolivegreen;
+            text-align: center;
+        }
+
+        .tr2,
+        .tr4 {
+            background-color: darkkhaki;
+            text-align: center;
+        }
+
+        /* th:nth-child(even/odd) to apply css property for huge number of rows */
+        /*th:nth-child(even) {
+            background-color: yellow;
+        }
+
+        th:nth-child(odd) {
+            background-color: aqua;
+        }
+
+        /* td:nth-child(odd){
+            background-color: red;
+       }
+        td:nth-child(even){
+            background-color: blueviolet;
+       } 
+        tr:nth-child(even) {
+            background-color: chocolate;
+        }
+
+        tr:nth-child(odd) {
+            background-color: cadetblue;
+        }*/
+
+        .NickName{
+            background-color: cyan;
+
+        }
+
+        .td1 {
+            background-color: blanchedalmond;
+        }
+
+        .td2 {
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="table">
+        <!-- col tag:: to apply css property to table(use it always inside the table tag) 
+        col tag:: 1 col to apply for 1 column-->
+        <colgroup>
+            <col style="background-color: green;">
+            <col style="background-color: none;">
+            <col style="background-color: yellow;">
+        </colgroup>
+        <!-- table row -->
+        <tr class="tr1">
+            <!-- table heading -->
+            <th>Name</th>
+            <th>Age</th>
+            <th>Phone</th>
+        </tr>
+        <tr class="tr2">
+            <!-- table data -->
+            <td class="td1">bheem</td>
+            <td class="td2">12</td>
+            <td>100</td>
+        </tr>
+        <tr class="tr3">
+            <td>raju</td>
+            <td>11</td>
+            <td>108</td>
+        </tr>
+        <tr class="tr4">
+            <td>khaliya</td>
+            <td>12</td>
+            <td>99</td>
+        </tr>
+        <tr class="tr5">
+            <td>chuttki</td>
+            <td>10</td>
+            <td>145</td>
+        </tr>
+    </table>
+    <br>
+    <div>
+        <table class="cartoon">
+            <caption>Cartoons shows</caption>
+            <tr>
+                <td>Dragon ball Z</td>
+                <td>Blayebade</td>
+                <td>Tom and Jerry</td>
+                <td>Mr Bean</td>
+                <td>Bob the builder</td>
+                <td>Pokemon</td>
+                <td>Shaw</td>
+                <td>Agarwal</td>
+                <td>Pujara</td>
+                <td>Kohli</td>
+                <td>Rahane</td>
+                <td>Vihari</td>
+                <td>Saha</td>
+                <td>Ashwin</td>
+            </tr>
+        </table>
+    </div>
+        <table class="NickName">
+            <tr>
+                <th id="NickNameth" rowspan="5">Student Details</th>
+                <th id="NickNameth">Name</th>
+                <th id="NickNameth">NickName</th>
+            </tr>
+            <tr>
+                <td>Ajay</td>
+                <td>sade</td>
+            </tr>
+            <tr>
+                <td>Akhilesh</td>
+                <td>wade</td>
+            </tr>
+            <tr>
+                <td>Lakshmikanth</td>
+                <td>lkb</td>
+            </tr>
+            <tr>
+                <td>Kiran</td>
+                <td>Bevarsi Kudka</td>
+            </tr>
+        </table>
+</body>
+
+</html>

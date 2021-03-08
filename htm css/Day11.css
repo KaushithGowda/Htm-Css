@@ -1,0 +1,60 @@
+table,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 70%;
+    height: 100px;
+}
+
+/*decendant selector:: space(combinator) :parent--->child--->grandchild(decreasing order)*/
+div span{
+    background-color: aquamarine;
+    font-size: 30px;
+}
+
+/*decendant selector:: >(greator than)(combinator): parent--->child(decreasing order)*/
+div > span{
+    color: blue;
+}
+
+/*sibling:: +(plus)(combinator)adjacent sibling*/
+div + p{
+    background-color: darkorange;
+}
+
+/* h1 + span{
+    background-color: darkorange;
+} */
+/*general::~ siblings*/
+div ~ span{
+    background-color: chartreuse;
+}
+
+.container{
+    /* display:grid :: to create table(block grid) */
+    /* display:inline-grid :: to create table(inline-grid) */
+    display: inline-grid;
+    background-color: black;
+    color: black;
+    /* specifying columns */
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin: 20px;
+    /* to increase height of row and coloumns */
+    grid-template-columns: 100px 200px 120px;
+    /* to increase width of row and coloumns */
+    grid-template-rows: 100px 200px 120px;
+    /*grid-row-gap: 20px;
+    grid-column-gap: 20px;*/
+    /* short end property for grid-row-gap and grid-coulmn-gap */
+    /* grid-gap: 20px; */
+}
+
+.item{
+    background-color: darkgrey;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+}
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day7</title>
+    <style>
+        h1,h2{
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-transform: capitalize;
+        }
+        body{
+            /* background:linear-gradient :: mixed colours 
+            * -->to top
+            * -->to bottom
+            * -->to right
+            * -->to left */
+            /* background: linear-gradient(to bottom,yellow,red,white); */
+            /* background: linear-gradient(to top,yellow,red,white);
+            *  background: linear-gradient(to left,yellow,red,white);
+            *  background: linear-gradient(to right,yellow,red,white); */
+            
+            /* angles from where the colors can start
+            *  background: linear-gradient(60deg,yellow,red,white);*/
+
+            /* Radial gradient :: shape of color distribution is elipse */
+            /*background-image:radial-gradient(circle,black 20%,blue 5%,white 2%,gold) ;
+            background-repeat:no-repeat ;
+            height: 1000px;
+            text-transform: capitalize;*/
+        } 
+        ol,ul{
+            background-color: grey;
+            color: aliceblue;
+            /* list-style-type: disc; */
+            /* list item marker(bullets) position
+            *  list-style-position: inside; */
+            list-style-position: outside;
+            /* image as list item marker
+            *  list-style-image: url(../images/nature.webp); */
+        }
+        li{
+            background-color: black;
+        }
+        h3{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:gray;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>good morning world its brand new day</h1>
+    <h2>hello world</h2>
+    <!-- unordered list -->
+    <h3> Groceries(unordered list) </h3>
+    <ul type="square">
+        <!-- circle,square,null -->
+        <li> Ragi Munde </li>
+        <li> Bas Saaru </li> 
+        <li> Soppu </li>
+        <li> Rice </li> 
+    </ul>
+    <!-- ordered list -->
+    <h3> Idols(ordered list) </h3>
+    <ol type="1" >
+        <!-- type:: I,1,A,a -->
+        <li value="7"> Cristiano Ronaldo </li>
+        <li value= "18"> Virat Kohli </li> 
+        <li value= "1" > Marshall Mathers </li>
+    </ol>
+    <!-- descriptive list -->
+    <dl>
+        <!-- descriptive term -->
+        <dt>Life</dt>
+        <!-- descriptive data -->
+        <dd>Life is a joke.</dd>
+
+        <dt>Happiness</dt>
+        <dd>Happpiness is a choice.</dd>
+    </dl>
+    <ul>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" height="100px" alt="image of ronaldo"></li>
+        <li><audio src="../audio/Gasolina.mp3"></audio></li>
+    </ul>
+    <!-- nested list -->
+    <ol>
+        <li>Kaushith</li>
+        <li>Ajay</li>
+        <li> 
+            <ul>
+                <li>Police</li>
+                <li>Engineer</li>
+                <li>Businessman</li>
+                <li>Driver</li>
+                <li>Teacher</li>
+            </ul>
+        </li>
+        <li>Akhilesh</li>
+        <li>Doctor</li>
+        <li>Lawyer</li>
+    </ol>
+   
+</body>
+</html>

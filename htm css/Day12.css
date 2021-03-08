@@ -1,0 +1,73 @@
+.container1 {
+    /* display:grid :: to create table(block grid) */
+    /* display:inline-grid :: to create table(inline-grid) */
+    display              : inline-grid;
+    background-color     : black;
+    color                : black;
+    /* specifying columns */
+    grid-template-columns: auto auto auto;
+    padding              : 10px;
+    margin               : 20px;
+    /* to increase height of row and coloumns */
+    grid-template-columns: 100px 200px 120px;
+    /* to increase width of row and coloumns */
+    grid-template-rows   : 100px 200px 120px;
+    /*grid-row-gap       : 20px;
+    grid-column-gap      : 20px;*/
+    /* short end property for grid-row-gap and grid-coulmn-gap */
+    /* grid-gap          : 20px; */
+}
+
+.item {
+    background-color: darkgrey;
+    border          : 1px solid black;
+    text-align      : center;
+    padding         : 10px;
+    font-size       : 50px;
+}
+
+.item1 {
+    /* merges rows or columns */
+    /*  */
+    /* grid-column-start: 1; :: this tag functions like colspan and rowspan */
+    
+    /* grid-column-start: 1; */
+    /* grid-column-end: 3; */
+    
+    /* short end property for grid-column-start and grid-column-end  */
+    
+    /* grid-column: 1/3; 
+    grid-row: 1/3; */
+}
+
+/* any cell can be made as 1st cell */
+/* .item5{
+    grid-column: 1/3; 
+    grid-row: 1/3;
+} */
+
+.container2 {
+    display              : grid;
+    background-color     : black;
+    color                : black;
+    grid-template-columns: auto auto auto;
+    padding              : 10px;
+    margin               : 20px;
+}
+
+.container3 {
+    display              : grid;
+    background-color     : grey;
+    color                : black;
+    grid-template-columns: auto auto auto;
+    padding              : 10px;
+    margin               : 5px;
+}
+
+.item4 {
+    border               : 0.5px solid black;
+    background-color     : darkgrey;
+    text-align           : center;
+    padding              : 10px;
+    font-size            : 50px;
+}
